@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,300;1,500&display=swap" rel="stylesheet">
+    <title>ecoHouse</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    <div class="menubox">
+        <div class="firsthide"></div>
+        <div class="secondhide"></div>
+        <div class="threehide"></div>
+        <img src="img/close.svg" id="close" onclick="closemenu()">
+        <div class="menuoptions">
+            <h2 onclick="window.open('https://ecohouse.org.ar')">SABER MÁS</h2>
+            <h2 onclick="window.open('https://twitter.com')">TWITTER</h2>
+            <h2 onclick="window.open('https://ecohouse.org.ar/contacto')">CONTÁCTANOS</h2>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="menu" id="menuex">
+            <h2  onclick="showthemenu()">menu</h2>
+        </div>
+        <div class="projects" onclick="window.open('https://ecohouse.org.ar/programas')">
+            <h2>proyectos</h2>
+        </div>
+    </div>
+    <div class="brand">
+        <h5 id="brand"><i>ecoHouse</i></h5>
+    </div>
+    <div class="scrollbar-box">
+        <div class="scrollbar"></div>
+    </div>
+    <div class="nav2">
+        <h3 class="menu-t">BIENVENIDO <span id="count">01</span></h3>
+        <div class="label" id="label"></div>
+    </div>
+    <div class="container" id="c1" >
+        <h1 class="menu-desc">Somos más de 700 voluntarios intentando hacer algo positivo por el mundo.</h1>
+        <div id="birds">
+            <img src="img/bird1.png" id="butterfly" class="butter1" data-depth="1.2">
+            <img src="img/bird2.png" id="butterfly2" class="butter2" data-depth="2.1">
+        </div>
+    </div>
+    <div class="mbox"></div>
+    <div class="container">
+        <h2 class="tittle2"><i>NOTICIAS</i></h2>
+        <h3 class="desc2"><i>Nuevos avances y novedades</i> </h3>
+        <div class="box"></div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                <div class="news">
+                    <h1>#EcoHouseGlobal</h1>
+                    <h2>¡Fundá tu ecoHouse!</h2>
+                    <img src="img/n3.jpg">
+                </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="news">
+                        <h1>#PrimeroEducacion</h1>
+                        <h2>¡Red de escuelas!</h2>
+                        <img src="img/n2.png">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="news">
+                        <h1>LEY YOLANDA</h1>
+                        <h2>¡Ya estamos capacitando en todo el país! </h2>
+                        <img src="img/n4.jpg">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="news">
+                            <h1>#RCOYLAC</h1>
+                            <h2>Cumbre Climática LA-C</h2>
+                            <img src="img/n1.png">
+                    </div>
+                </div>
+            </div>
+        </div>            
+    </div> 
+    <div class="container" id="aboutus">
+        <div class="animatebg">
+            <img src="img/animatebg.jpg" class="animbg">
+        </div>
+        <div class="rightbox">
+            <div class="twitterbox">
+                <h4>MÁS SOBRE NOSOTROS</h4>
+                <div class="twitter" onclick="window.open('https://twitter.com/')">TWITTER</div>
+            </div>
+            <div class="aboutus">
+                <h2>Sobre nosotros</h2>
+                <h3>Eco House Global es una organización sin fines de lucro nacida en Argentina, con presencia en América Latina, Europa y África, especializada en educación, política, economía y voluntariado para la sostenibilidad.</h3>
+                <h4>Organización</h4>
+                <h3>A través de 9 Departamentos, 31 Programas y 6 sedes.</h3>
+                <h3>Eco House es un club. <br>
+                    En un club de fútbol, el deporte es el fútbol.<br>
+                    En un club de rugby, el deporte es el rugby.<br>
+                    En un club de tenis, el deporte es el tenis.<br>
+                    En Eco House, el deporte es ayudar.</h3>
+            </div>
+        </div>
+    </div>
+    <div class="c-container">
+        <section class="comunity c1">
+            <h2>CONOCIENDO A ECO HOUSE</h2>
+            <h3>Tras navegar durante años en el océano de ayudar, descubrimos a Las Crisis, tres diosas, sirenas, cuya influencia en las emociones, acciones y pensamientos de la humanidad origina todos los problemas económicos, sociales y ambientales que conocemos. Ellas son: Pneuma, la Crisis Existencial-Espiritual; Ethos, la Crisis Ética (temporal y atemporal); y Pathos, la Crisis de Inteligencia Emocional.</h3>
+            <ul>
+                <li>
+                    PNEUMA
+                </li>
+                <li>
+                    ETHOS
+                </li>
+                <li>
+                    PATHOS
+                </li>
+            </ul>
+        </section>
+        <section class="comunity c2">
+            <h2>ECO HOUSE AL DESCUBIERTO</h2>
+            <h4>En los papeles, Eco House es una organización sin fines de lucro especializada en
+                educación, política, economía y voluntariado para la sostenibilidad.
+                Sin embargo, para nosotros los ecohousianos, es mucho más que eso.
+                </h4>
+        </section>
+        <section class="comunity c3">
+            <h2>SEDES ACTIVAS</h2>
+
+            <ul>
+                <li> ► Eco House Global (Arévalo 1557, C.A.B.A., ARG) | EHG.</li>
+
+                <li> ► Eco House Pilar (Buenos Aires, ARG) | EHP.</li>
+
+                <li>► Eco House La Plata (Buenos Aires, ARG) | EHLP.</li>
+
+                <li>► Eco House Salta (Salta, ARG) | EHLP.</li>
+
+                <li>► EH Córdoba (Córdoba, Argentina) | EHC.</li>
+
+                <li>► EH Concordia (Entre Ríos, Argentina) | EHCC.</li>
+            </ul>
+        </section>
+        <section class="comunity c4">
+            <h2>HIGHLIGHTS GENERALES</h2>
+            <ul>
+                <li>► Eco House Global es la organización ambiental con más voluntarios de la República Argentina.</li>
+                <li>► EHG fue reconocida como Youth Leader por el Programa de las Naciones Unidas para el Desarrollo y trabaja cotidianamente con la ONU.</li>
+                <li>► EHG fue declarada de Interés Ambiental por el Congreso Nacional argentino y la Legislatura de la Ciudad Autónoma de Buenos Aires (Argentina), una de las metrópolis más grandes de Latinoamérica.</li>
+                <li>► EHG es co-fundadora de la Alianza x el Clima Argentina.</li>
+            </ul>
+        </section>
+        <section class="comunity c5">
+            <h2>¡Gracias por ver!</h2>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/MotionPathPlugin.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script>
+    var example2 = new Vue({
+        el: 'menuex',
+        data: {
+            name: 'Vue.js'
+        },
+        methods: {
+            showmenu: function (event) {
+                showthemenu(); //jajaja
+            }
+        }
+    })
+    </script>
+    <script>
+        const fh = document.querySelector('.firsthide');
+        const sh = document.querySelector('.secondhide');
+        const th = document.querySelector('.threehide');
+        const menuop = document.querySelector('.menuoptions');
+        function showthemenu(){
+            fh.style.marginLeft="100vw";
+            sh.style.marginLeft="-100vw";
+            th.style.marginLeft="100vw";
+            menuop.style.marginTop="-60vh";
+            document.getElementById('close').style.marginRight="20vw";
+        }
+        function closemenu(){
+            fh.style.marginLeft="0vw";
+            sh.style.marginLeft="0vw";
+            th.style.marginLeft="0vw";
+            menuop.style.marginTop="0vh";
+            document.getElementById('close').style.marginRight="0vw";
+        }
+    </script>
+    <script>
+        gsap.to(".scrollbar", {
+            scrollTrigger:  {
+            trigger: ".scrollbar",
+            start: "top 20%",
+            end:"6000px 80%",
+            scrub: 5,
+            toggleActions:"play reverse none none"
+            },
+            y:800
+        });
+        gsap.to(".animbg",{
+            duration: 8.5,
+            repeat:-1,
+            x:-100,
+            yoyo:true,
+            ease: "sine.inOut"
+        });
+    </script>
+    <script>
+        var scene = document.getElementById('birds');
+        var parallaxInstance = new Parallax(scene);
+        const menu = document.querySelector('.navbar');
+        const menu2 = document.querySelector('.menu-t');
+        const brand = document.getElementById('brand');
+        const sbar = document.querySelector('.scrollbar');
+        window.onscroll = () => {
+            if (window.scrollY > 500) {
+                document.body.style.backgroundImage = "url('img/w2.jpg')";
+                menu.style.color='#f9f9f9';
+                menu2.style.color='#f9f9f9';
+                document.getElementById('brand').style.color='#f9f9f9';
+                document.getElementById('label').style.backgroundColor='#f9f9f9';
+                menu2.innerHTML="NOTICIAS<span id='count'>02</span>";
+                if (window.scrollY > 1500){
+                brand.style.marginRight="-3vw";
+                menu2.innerHTML="SOBRE NOSOTROS<span id='count'>03</span>";
+                if (window.scrollY > 2600){
+                    brand.style.marginTop="-50vh";
+                    sbar.style.opacity="0%";
+                    menu2.innerHTML="INTRODUCCIÓN<span id='count'>04</span>";
+                    if (window.scrollY > 2900){
+                        menu.style.marginLeft="-5vw";
+                        if (window.scrollY > 10300){
+                            menu2.innerHTML="GRACIAS POR VER<span id='count'>05</span>";
+                        }
+                    }
+                    else{
+                        menu.style.marginLeft="0vw";
+                    }
+                }
+                else{
+                    sbar.style.opacity="100%";
+                    if(window.scrollY > 500)    {
+                        brand.style.marginTop="0vh"; 
+                    }
+                }
+                    }
+                    else{
+                        brand.style.marginRight="0vw";
+                    }
+                }
+                else{
+                document.body.style.backgroundImage = "url('img/w1.jpg')";
+                menu.style.color='#191919';
+                menu2.style.color='#191919';
+                document.getElementById('brand').style.color='#191919';
+                document.getElementById('label').style.backgroundColor='#191919';
+                menu2.innerHTML="BIENVENIDO<span id='count'>01</span>";
+            }
+        }
+    </script>
+    <script>
+        var appendNumber = 4;
+        var prependNumber = 1;
+        var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        });
+    </script>
+    <script>
+        let sections = gsap.utils.toArray(".comunity");
+
+        gsap.to(sections, {
+        xPercent: -100 * (sections.length - 1),
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".c-container",
+            pin: true,
+            scrub: 1,
+            snap: 1 / (sections.length - 1),
+            end: () => "+=" + document.querySelector(".c-container").offsetWidth
+        }
+        });
+    </script>
+</body>
+</html>

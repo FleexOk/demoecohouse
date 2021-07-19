@@ -222,6 +222,7 @@
             th.style.marginLeft="100vw";
             menuop.style.marginTop="-60vh";
             document.getElementById('close').style.marginRight="20vw";
+            menu.style.marginLeft="-5vw";
         }
         function closemenu(){
             fh.style.marginLeft="0vw";
@@ -229,6 +230,7 @@
             th.style.marginLeft="0vw";
             menuop.style.marginTop="0vh";
             document.getElementById('close').style.marginRight="0vw";
+            menu.style.marginLeft="0vw";
         }
     </script>
     <!-- SCROLLBAR -->
@@ -305,25 +307,6 @@
                 menu2.innerHTML="BIENVENIDO<span id='count'>01</span>";
             }
         }
-    </script>
-    <script>
-    $(document).ready(function(){
-
-        $('.ir-arriba').click(function(){
-            $('body, html').animate({
-                scrollTop: '0px'
-            }, 300);
-        });
-
-        $(window).scroll(function(){
-            if( $(this).scrollTop() > 0 ){
-                $('.ir-arriba').slideDown(300);
-            } else {
-                $('.ir-arriba').slideUp(300);
-            }
-        });
-
-    });
     </script>
     <script>
         var appendNumber = 4;

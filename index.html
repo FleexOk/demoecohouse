@@ -216,7 +216,9 @@
         const sh = document.querySelector('.secondhide');
         const th = document.querySelector('.threehide');
         const menuop = document.querySelector('.menuoptions');
+        const fquery = document.querySelector('.menuex');
         function showthemenu(){
+            fquery.style.zIndex ="101";
             fh.style.marginLeft="100vw";
             sh.style.marginLeft="-100vw";
             th.style.marginLeft="100vw";
@@ -231,6 +233,7 @@
             menuop.style.marginTop="0vh";
             document.getElementById('close').style.marginRight="0vw";
             menu.style.marginLeft="0vw";
+            fquery.style.zIndex ="0";
         }
     </script>
     <!-- SCROLLBAR -->

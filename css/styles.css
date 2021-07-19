@@ -471,6 +471,7 @@ body {
   font-family: Montserrat;
   font-weight: bold;
   width: 100%;
+  z-index: 103;
 }
 .menuoptions h2:hover {
   color: #ff0558;

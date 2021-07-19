@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- TAGS -->
+    <title>ecoHouse</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,300;1,500&display=swap" rel="stylesheet">
-    <title>ecoHouse</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>  
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/magic-mouse.css">
 </head>
-<body>
+<body ondragstart="return false" onselectstart="return false" oncontextmenu="return false">
+    <div class="jquery" id="mquery">
+    <img src="img/menu.svg" class="pmenu" id="pmenu" onclick="showthemenu()">
     <div class="menubox">
         <div class="firsthide"></div>
         <div class="secondhide"></div>
         <div class="threehide"></div>
         <img src="img/close.svg" id="close" onclick="closemenu()">
-        <div class="menuoptions">
-            <h2 onclick="window.open('https://ecohouse.org.ar')">SABER MÁS</h2>
-            <h2 onclick="window.open('https://twitter.com')">TWITTER</h2>
-            <h2 onclick="window.open('https://ecohouse.org.ar/contacto')">CONTÁCTANOS</h2>
+        <div class="menuex">
+            <div class="menuoptions">
+                <h2 onclick="window.open('https://ecohouse.org.ar')">SABER MÁS</h2>
+                <h2 onclick="window.open('https://twitter.com')">TWITTER</h2>
+                <h2 onclick="window.open('https://ecohouse.org.ar/contacto')">CONTÁCTANOS</h2>
+            </div>
         </div>
     </div>
     <div class="navbar">
-        <div class="menu" id="menuex">
-            <h2  onclick="showthemenu()">menu</h2>
+        <div class="menu" id="menuex" >
+            <h2 onclick="showthemenu()">menu</h2>
         </div>
         <div class="projects" onclick="window.open('https://ecohouse.org.ar/programas')">
             <h2>proyectos</h2>
@@ -52,7 +58,7 @@
         <h2 class="tittle2"><i>NOTICIAS</i></h2>
         <h3 class="desc2"><i>Nuevos avances y novedades</i> </h3>
         <div class="box"></div>
-        <div class="swiper-container">
+        <div class="swiper-container" id="testing">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                 <div class="news">
@@ -92,7 +98,7 @@
         <div class="rightbox">
             <div class="twitterbox">
                 <h4>MÁS SOBRE NOSOTROS</h4>
-                <div class="twitter" onclick="window.open('https://twitter.com/')">TWITTER</div>
+                <div class="twitter magic-hover magic-hover__square" onclick="window.open('https://twitter.com/')">TWITTER</div>
             </div>
             <div class="aboutus">
                 <h2>Sobre nosotros</h2>
@@ -158,16 +164,30 @@
         </section>
         <section class="comunity c5">
             <h2>¡Gracias por ver!</h2>
+            <h3>HERRAMIENTAS USADAS</h3>
+            <ul>
+                <li>GSAP</li>
+                <li>jQuery</li>
+                <li>VueJS</li>
+                <li>Swiper</li>
+            </ul>
         </section>
     </div>
+    </div>
+    <!-- PLUGINS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>	
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/MotionPathPlugin.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>  
     <script src="js/vue.js"></script>
+    <script src="js/mouse.js"></script>
+    <script src="js/index.js"></script>
+    <!-- SCRIPTS -->
+    <!-- vue -->
     <script>
-    var example2 = new Vue({
+    /*var example2 = new Vue({
         el: 'menuex',
         data: {
             name: 'Vue.js'
@@ -177,8 +197,20 @@
                 showthemenu(); //jajaja
             }
         }
-    })
+    })*/
     </script>
+    <script>
+    options = {
+        "cursorOuter": "disable",
+        "hoverEffect": "pointer-overlay",
+        "hoverItemMove": false,
+        "defaultCursor": false,
+        "outerWidth": 30,
+        "outerHeight": 30
+    }; 
+    magicMouse(options);
+    </script>
+    <!-- MENU -->
     <script>
         const fh = document.querySelector('.firsthide');
         const sh = document.querySelector('.secondhide');
@@ -199,6 +231,7 @@
             document.getElementById('close').style.marginRight="0vw";
         }
     </script>
+    <!-- SCROLLBAR -->
     <script>
         gsap.to(".scrollbar", {
             scrollTrigger:  {
@@ -227,7 +260,8 @@
         const sbar = document.querySelector('.scrollbar');
         window.onscroll = () => {
             if (window.scrollY > 500) {
-                document.body.style.backgroundImage = "url('img/w2.jpg')";
+                document.getElementById('pmenu').src = "img/menu2.svg";
+                document.body.style.backgroundImage="url('img/w2.jpg')";
                 menu.style.color='#f9f9f9';
                 menu2.style.color='#f9f9f9';
                 document.getElementById('brand').style.color='#f9f9f9';
@@ -262,7 +296,8 @@
                     }
                 }
                 else{
-                document.body.style.backgroundImage = "url('img/w1.jpg')";
+                document.getElementById('pmenu').src = "img/menu.svg";
+                document.body.style.backgroundImage="url('img/w1.jpg')";
                 menu.style.color='#191919';
                 menu2.style.color='#191919';
                 document.getElementById('brand').style.color='#191919';
@@ -272,16 +307,50 @@
         }
     </script>
     <script>
+    $(document).ready(function(){
+
+        $('.ir-arriba').click(function(){
+            $('body, html').animate({
+                scrollTop: '0px'
+            }, 300);
+        });
+
+        $(window).scroll(function(){
+            if( $(this).scrollTop() > 0 ){
+                $('.ir-arriba').slideDown(300);
+            } else {
+                $('.ir-arriba').slideUp(300);
+            }
+        });
+
+    });
+    </script>
+    <script>
         var appendNumber = 4;
         var prependNumber = 1;
         var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 3,
-        centeredSlides: true,
-        spaceBetween: 30,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
+            slidesPerView: 1,
+            spaceBetween: 10,
+            centeredSlides: true,
+            // init: false,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                },
+                768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+                },
+                1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+                },
+            }
         });
     </script>
     <script>
